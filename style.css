@@ -70,22 +70,19 @@ img {
 
 menu {
   width: 100%;
-  padding: 8px 15px;
   position: fixed; 
   border-radius: 12px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   background-color: var(--menu--table--colour--);
-  /* overflow: auto; */
 }
 
 .stock-name {
-  /* width: 100%; */
-  /* padding-left: 0.3rem;
-  padding-top: 0.3rem; */
+  padding: 0.7rem;
   height: 40px;
   border-radius: 20px;
   font-family: "Roboto Serif", serif;
   font-weight: 400;
+  font-size: 16px;
   background-color: var(--menu--table--colour--);
   color: var(--menu--text--colour--);
 }
@@ -96,7 +93,7 @@ menu {
 
 .search-type {
   margin: 0.5rem 0;
-  padding-bottom: 0.5rem;
+  padding: 0.7rem;
   font-family: "Roboto Serif";
   font-weight: 500;
   font-size: 11px;
