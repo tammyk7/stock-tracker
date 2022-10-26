@@ -1,0 +1,117 @@
+@import "./colors.css";
+@import "./font-styles.css";
+
+body {
+    margin: 0rem;
+    height: fit-content;
+    background-color: var(--core-secondary-1);
+}
+input, input:focus {
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.layout-container {
+    height: 100%;
+  display: grid;
+  grid-template-columns: 8.0625rem 1fr 21.875rem;
+  grid-template-rows: 5.75rem 1fr 3.4375rem;
+  grid-template-areas: "header name-price summary""header main summary""header footer summary" ;
+}
+
+.layout-container > header {
+    grid-area: header;
+    background-color: #F1F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-price-container {
+    grid-area: name-price;
+    display: flex;
+    height: 5.75rem;
+}
+
+.stock-main-container {
+    grid-area: main;
+    overflow: auto;
+}
+
+.stock-chart {
+    min-height: 25rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-primary-2);
+}
+
+.key-statistics-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.key-statistics-item {
+    min-width: 25.5rem;
+    border-top: 1px solid ;
+}
+.key-statistics-list:first-child{
+    border-top: none;
+}
+
+.extra-info-container{
+    grid-area: summary;
+    background-color: #F1F2F2;
+    height: 100%;
+    overflow: auto;
+}
+.top-peers-list {
+    display: flex;
+}
+
+
+.layout-container > footer {
+    grid-area: footer;
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    height: 3.438rem;
+}
+
+.footer-price-tracker-container{
+    display: flex;
+
+}
+
+@media (max-width: 1100px) {
+    .layout-container{
+        display:flex;
+        flex-direction: column;
+
+    }
+
+    .name-price-container{
+        height: 5.125rem;
+    }
+
+    .stock-main-container{
+        overflow:initial;
+    }
+
+    .extra-info-container{
+        overflow: initial;
+    }
+}
