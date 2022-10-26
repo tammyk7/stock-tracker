@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto+Serif:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -16,7 +16,7 @@
   --search--text--colour--: #4d4d4d;
   --menu--hover--colour--: #f1f2f2;
   --headers-font--: "Merriweather", serif;
-  --generic-font--: "Roboto Serif", serif;
+  --generic-font--: "Roboto", serif;
 }
 
 main {

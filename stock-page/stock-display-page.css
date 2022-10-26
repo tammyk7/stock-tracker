@@ -7,8 +7,8 @@ body {
     background-color: var(--background--colour--);
     font-family: var(--generic-font--);
 }
-input, input:focus {
-    border: none;
+input {
+    margin: 0;
 }
 
 ul {
@@ -49,7 +49,7 @@ ul {
     align-items: end;
     margin-left: 1.375rem;
     margin-right: 1.375rem;
-    padding-bottom: .6rem;
+    padding-bottom: .95rem;
     font-family: "Merriweather", serif;
     font-size: 32px;
     border-bottom: 2px solid var(--search--border--);
